@@ -1,0 +1,16 @@
+﻿{
+  "ConnectionStrings": {
+    "Default": "Data Source=localhost;Initial Catalog=usp2022db;Integrated Security=True"
+  },
+  "AppSettings": {
+    "appPath": "//sql01/GITREP/USP_2022/USP_2022/App_application",
+    "appKey": "Test",
+    "configuration": "debug"
+  },
+  "Startup": {
+    "supportedRuntime": {
+      "version": "v4.0",
+      "sku": ".NETFramework,Version=v4.8"
+    }
+  }
+}
