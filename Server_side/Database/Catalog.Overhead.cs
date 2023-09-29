@@ -14,39 +14,44 @@ namespace Server_side.Database
         {
             IDataModel dm = await _dbContext.LoadModelAsync(null, "[app].[Overhead.Index]", new { UserId = 1 });
             var md = new MetadataTester(dm);
-            md.IsAllKeys("TRoot,TOverhead,TOverhead_Group,TAgent,TPricetype");
+            md.IsAllKeys("TRoot,TOverhead,TOverhead_Group,TOverhead_Method,TOverhead_Type");
             md.IsItemType("TRoot", "Overheads", FieldType.Array);
-            md.IsItemType("TRoot", "OverheadGroups", FieldType.Array);
-
 
             const string ObjectType = "TOverhead";
 
             md.HasAllProperties(
                ObjectType,
-               "Id,Name,OverheadGroup,FullName,Code,IsActive,Memo,Customer," +
-               "General_constractor,IsSales_Resource_method,ExternalCode,Pricetype_Cost,Pricetype_Selling"
+               "Id,Name,Overhead_Group,Overhead_Method,Overhead_Type,"+
+               "Application_area,Base_IND,Base_MASH,Base_OB,Base_OH1,Base_OH2, Base_OZP, Base_PZ, Base_SP, Base_ZM, Baze_MAT,"+
+               "OValue,Value,Memo"
                );
 
             md.IsId(ObjectType, "Id");
             md.IsName(ObjectType, "Name");
 
-            md.IsItemType(ObjectType, "OverheadGroup", FieldType.Object);
-            md.IsItemType(ObjectType, "Customer", FieldType.Object);
-            md.IsItemType(ObjectType, "General_constractor", FieldType.Object);
-            md.IsItemType(ObjectType, "Pricetype_Cost", FieldType.Object);
-            md.IsItemType(ObjectType, "Pricetype_Selling", FieldType.Object);
+            md.IsItemType(ObjectType, "Overhead_Group", FieldType.Object);
+            md.IsItemType(ObjectType, "Overhead_Method", FieldType.Object);
+            md.IsItemType(ObjectType, "Overhead_Type", FieldType.Object);
 
             md.HasAllProperties(
-                            "TOverheadGroup",
+                            "TOverhead_Group",
                             "Id,Name");
 
-            md.IsId("TOverheadGroup", "Id");
+            md.IsId("TOverhead_Group", "Id"); 
+            
+            md.HasAllProperties(
+                            "TOverhead_Method",
+                            "Id,Name");
 
-            /*
-            String script = dm.CreateScript(_scripter);
-            var pos = script.IndexOf("cmn.defineObject(TAgent, {props: {}}, true);");
-            Assert.That(pos, Is.Not.EqualTo(-1), "Invalid script for TAgent");
-            */
+            md.IsId("TOverhead_Method", "Id"); 
+            
+            md.HasAllProperties(
+                            "TOverhead_Type",
+                            "Id,Name");
+
+            md.IsId("TOverhead_Type", "Id");
+
+          
         }
     }
 

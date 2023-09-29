@@ -21,7 +21,7 @@ namespace Server_side.Database
         {
             var propArray = props.Split(',');
             foreach (var prop in propArray)
-                Assert.That(_meta.ContainsKey(prop), Is.True, $"'{prop}' not found");
+                Assert.That(_meta.ContainsKey(prop.Trim()), Is.True, $"'{prop}' not found");
             Assert.That(_meta.Count, Is.EqualTo(propArray.Length), $"invalid length for '{props}'");
         }
 
@@ -30,7 +30,7 @@ namespace Server_side.Database
             var data = _meta[key] as ElementMetadata;
             var propArray = props.Split(',');
             foreach (var prop in propArray)
-                Assert.That(data.ContainsField(prop), Is.True, $"'{prop}' not found");
+                Assert.That(data.ContainsField(prop.Trim()), Is.True, $"'{prop}' not found");
             Assert.That(data.FieldCount, Is.EqualTo(propArray.Length), $"invalid length for '{props}' properties");
         }
 
