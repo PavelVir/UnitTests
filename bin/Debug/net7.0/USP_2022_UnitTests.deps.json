@@ -19,9 +19,9 @@
           "coverlet.collector": "6.0.0",
           "A2v10.Data": "10.0.7332.0",
           "A2v10.Data.Interfaces": "10.0.7332.0",
-          "A2v10.Infrastructure": "10.0.7948.0",
-          "A2v10.Request": "10.0.7948.0",
-          "A2v10.Xaml": "10.0.7948.0"
+          "A2v10.Infrastructure": "10.0.7949.0",
+          "A2v10.Request": "10.0.7949.0",
+          "A2v10.Xaml": "10.0.7949.0"
         },
         "runtime": {
           "USP_2022_UnitTests.dll": {}
@@ -572,51 +572,51 @@
           }
         }
       },
-      "A2v10.Infrastructure/10.0.7948.0": {
+      "A2v10.Infrastructure/10.0.7949.0": {
         "runtime": {
           "A2v10.Infrastructure.dll": {
-            "assemblyVersion": "10.0.7948.0",
-            "fileVersion": "10.0.7948.0"
+            "assemblyVersion": "10.0.7949.0",
+            "fileVersion": "10.0.7949.0"
           }
         }
       },
-      "A2v10.Request/10.0.7948.0": {
+      "A2v10.Request/10.0.7949.0": {
         "runtime": {
           "A2v10.Request.dll": {
-            "assemblyVersion": "10.0.7948.0",
-            "fileVersion": "10.0.7948.0"
+            "assemblyVersion": "10.0.7949.0",
+            "fileVersion": "10.0.7949.0"
           }
         }
       },
-      "A2v10.Xaml/10.0.7948.0": {
+      "A2v10.Xaml/10.0.7949.0": {
         "runtime": {
           "A2v10.Xaml.dll": {
-            "assemblyVersion": "10.0.7948.0",
-            "fileVersion": "10.0.7948.0"
+            "assemblyVersion": "10.0.7949.0",
+            "fileVersion": "10.0.7949.0"
           }
         }
       },
-      "A2v10.Interop/10.0.7948.0": {
+      "A2v10.Interop/10.0.7949.0": {
         "runtime": {
           "A2v10.Interop.dll": {
-            "assemblyVersion": "10.0.7948.0",
-            "fileVersion": "10.0.7948.0"
+            "assemblyVersion": "10.0.7949.0",
+            "fileVersion": "10.0.7949.0"
           }
         }
       },
-      "A2v10.Lang/10.0.7948.0": {
+      "A2v10.Lang/10.0.7949.0": {
         "runtime": {
           "A2v10.Lang.dll": {
-            "assemblyVersion": "10.0.7948.0",
-            "fileVersion": "10.0.7948.0"
+            "assemblyVersion": "10.0.7949.0",
+            "fileVersion": "10.0.7949.0"
           }
         }
       },
-      "A2v10.Javascript/10.0.7948.0": {
+      "A2v10.Javascript/10.0.7949.0": {
         "runtime": {
           "A2v10.Javascript.dll": {
-            "assemblyVersion": "10.0.7948.0",
-            "fileVersion": "10.0.7948.0"
+            "assemblyVersion": "10.0.7949.0",
+            "fileVersion": "10.0.7949.0"
           }
         }
       },
@@ -907,32 +907,32 @@
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Infrastructure/10.0.7948.0": {
+    "A2v10.Infrastructure/10.0.7949.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Request/10.0.7948.0": {
+    "A2v10.Request/10.0.7949.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Xaml/10.0.7948.0": {
+    "A2v10.Xaml/10.0.7949.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Interop/10.0.7948.0": {
+    "A2v10.Interop/10.0.7949.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Lang/10.0.7948.0": {
+    "A2v10.Lang/10.0.7949.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Javascript/10.0.7948.0": {
+    "A2v10.Javascript/10.0.7949.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

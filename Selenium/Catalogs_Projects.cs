@@ -4,56 +4,52 @@ using NUnit.Framework;
 using Settings;
 using USP_2022_UnitTests.Selenium.Models;
 
-namespace UnitTests.Selenium
+namespace UnitTests.Selenium;
+
+[TestFixture]
+public class CatalogProject01CreateNewTest
 {
+    private IWebDriver driver;
 
-    [TestFixture]
-    public class CatalogProject01CreateNewTest
+    [OneTimeSetUp]
+    public void SetUp()
     {
-        private IWebDriver driver;
+        driver = WebDriverSinglton.GetInstance();
+    }
+    [OneTimeTearDown]
+    protected void TearDown()
+    {
+        driver.Quit();
+        driver.Dispose();
+    }
+    [Test]
+    public void CatalogProject01CreateNew()
+    {
+        driver.Navigate().GoToUrl(Params.Url);
 
-        [OneTimeSetUp]
-        public void SetUp()
+        var MainMenu = new MainMenu(driver);
+        var ProjectDialog = new ProjectDialog(driver);
+
+        MainMenu.Catalogs_click();
+        MainMenu.Projects_click();
+
+        Wait();          
+
+        ProjectDialog.Button_append_click();
+       
+        ProjectDialog.Project_Name_SendKeys("Test project");
+        ProjectDialog.Project_FullName_SendKeys("Test project");
+        ProjectDialog.Project_IsActive_click();
+        ProjectDialog.Button_SaveAndClose_click();
+
         {
-            driver = WebDriverSinglton.GetInstance();
+            WebDriverWait wait = new(driver, TimeSpan.FromSeconds(5));
+            wait.Until(driver => driver.FindElements(By.XPath("//span[contains(.,'Test project')]")).Count > 0);
         }
-        [OneTimeTearDown]
-        protected void TearDown()
+
+        void Wait()
         {
-            driver.Quit();
-            driver.Dispose();
-        }
-        [Test]
-        public void CatalogProject01CreateNew()
-        {
-            driver.Navigate().GoToUrl(Params.Url);
-
-            var MainMenu = new MainMenu(driver);
-            var ProjectDialog = new ProjectDialog(driver);
-
-            MainMenu.Catalogs_click();
-            MainMenu.Projects_click();
-
-            Wait();          
-
-            ProjectDialog.Button_append_click();
-           
-            ProjectDialog.Project_Name_SendKeys("Test project");
-            ProjectDialog.Project_FullName_SendKeys("Test project");
-            ProjectDialog.Project_IsActive_click();
-            ProjectDialog.Button_SaveAndClose_click();
-
-            {
-                WebDriverWait wait = new(driver, TimeSpan.FromSeconds(5));
-                wait.Until(driver => driver.FindElements(By.XPath("//span[contains(.,'Test project')]")).Count > 0);
-            }
-
-            void Wait()
-            {
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            }
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
         }
     }
-
-
 }

@@ -4,46 +4,44 @@ using A2v10.Data;
 using A2v10.Data.Interfaces;
 using OpenQA.Selenium.DevTools;
 
-namespace Server_side.Database
+namespace Server_side.Database;
+
+[TestFixture]
+public partial class Catalog
 {
-    [TestFixture]
-    public partial class Catalog
+
+    [Test]
+    public async Task Warehouse_Index()
     {
-
-        [Test]
-        public async Task Warehouse_Index()
-        {
-            IDataModel dm = await _dbContext.LoadModelAsync(null, "[app].[warehouses.Index]", new { UserId = 1 });
-            var md = new MetadataTester(dm);
-            md.IsAllKeys("TRoot,TWarehouse,TProject,TAgent");
-            md.IsItemType("TRoot", "Warehouses", FieldType.Array);
+        IDataModel dm = await _dbContext.LoadModelAsync(null, "[app].[warehouses.Index]", new { UserId = 1 });
+        var md = new MetadataTester(dm);
+        md.IsAllKeys("TRoot,TWarehouse,TProject,TAgent");
+        md.IsItemType("TRoot", "Warehouses", FieldType.Array);
 
 
-            const string ObjectType = "TWarehouse";
+        const string ObjectType = "TWarehouse";
 
-            md.HasAllProperties(
-               ObjectType,
-               "Id,Name,Project,Agent,Memo,IntegrationID"
-               );
+        md.HasAllProperties(
+           ObjectType,
+           "Id,Name,Project,Agent,Memo,IntegrationID"
+           );
 
-            md.IsId(ObjectType, "Id");
-            md.IsName(ObjectType, "Name");
+        md.IsId(ObjectType, "Id");
+        md.IsName(ObjectType, "Name");
 
-            md.IsItemType(ObjectType, "Project", FieldType.Object);
-            md.IsItemType(ObjectType, "Agent", FieldType.Object);
+        md.IsItemType(ObjectType, "Project", FieldType.Object);
+        md.IsItemType(ObjectType, "Agent", FieldType.Object);
 
-            md.HasAllProperties(
-                            "TProject",
-                            "Id,Name");
+        md.HasAllProperties(
+                        "TProject",
+                        "Id,Name");
 
-            md.IsId("TProject", "Id");
+        md.IsId("TProject", "Id");
 
-            md.HasAllProperties(
-                            "TAgent",
-                            "Id,Name");
+        md.HasAllProperties(
+                        "TAgent",
+                        "Id,Name");
 
-            md.IsId("TProject", "Id");
-        }
+        md.IsId("TProject", "Id");
     }
-
 }
