@@ -49,7 +49,7 @@ public class CatalogProject01CreateNewTest
 
         void Wait()
         {
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
     }
 }
