@@ -131,4 +131,4 @@ R:\USP_2022\UnitTests\bin\Debug\net7.0\A2v10.Javascript.dll
 R:\USP_2022\UnitTests\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
 R:\USP_2022\UnitTests\bin\Debug\net7.0\Jint.dll
 R:\USP_2022\UnitTests\bin\Debug\net7.0\Esprima.dll
-R:\USP_2022\UnitTests\bin\Debug\net7.0\DocumentFormat.OpenXml.xml
+R:\USP_2022\UnitTests\bin\Debug\net7.0\DocumentFormat.OpenXml.Framework.dll

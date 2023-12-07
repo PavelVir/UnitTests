@@ -49,7 +49,7 @@ public partial class Catalog
 
         md.HasAllProperties(
                        "TReg_rows",
-                       "Id,RowNo,Resource,Consumption_rate,Price,Price1,Price2,Laboriousness");
+                       "Id,RowNo,Resource,Consumption_rate,Price,Price1,Price2,Laboriousness,OverspendCoef");
 
         md.IsItemType("TReg_rows", "Resource", FieldType.Object);
 
