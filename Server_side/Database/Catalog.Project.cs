@@ -56,7 +56,7 @@ public partial class Catalog
     {
         IDataModel dm = await _dbContext.LoadModelAsync(null, "[app].[Project.Load]", new { UserId = 1, Id = 1 });
         var md = new MetadataTester(dm);
-        md.IsAllKeys("TRoot,TProject,TProjectGroup,TAgent,TPricetype");
+        md.IsAllKeys("TRoot,TProject,TProjectGroup,TAgent,TPricetype,TUser");
         md.IsItemType("TRoot", "Project", FieldType.Object);
 
         const string ObjectType = "TProject";
@@ -64,7 +64,8 @@ public partial class Catalog
         md.HasAllProperties(
            ObjectType,
            "Id,Name,ProjectGroup,FullName,Code,IsActive,Memo,Customer," +
-           "General_constractor,IsSales_Resource_method,ExternalCode,Pricetype_Cost,Pricetype_Selling"
+           "General_constractor,IsSales_Resource_method,ExternalCode,Pricetype_Cost,Pricetype_Selling," +
+           "MainManager"
            );
 
         md.IsId(ObjectType, "Id");
@@ -109,7 +110,7 @@ public partial class Catalog
                 new { UserId = 1, TenantId = 1 });
 
             var md = new MetadataTester(dm);
-            md.IsAllKeys("TRoot,TProject,TProjectGroup,TAgent,TPricetype");
+            md.IsAllKeys("TRoot,TProject,TProjectGroup,TAgent,TPricetype,TUser");
             md.IsItemType("TRoot", "Project", FieldType.Object);
 
             const string ObjectType = "TProject";
@@ -117,7 +118,8 @@ public partial class Catalog
             md.HasAllProperties(
                ObjectType,
                "Id,Name,ProjectGroup,FullName,Code,IsActive,Memo,Customer," +
-               "General_constractor,IsSales_Resource_method,ExternalCode,Pricetype_Cost,Pricetype_Selling"
+               "General_constractor,IsSales_Resource_method,ExternalCode,Pricetype_Cost,Pricetype_Selling," +
+               "MainManager"
                );
 
             md.IsId(ObjectType, "Id");
