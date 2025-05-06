@@ -21,5 +21,41 @@ namespace USP_2022_UnitTests.Selenium.Models
 
             if (wait is null) throw new ArgumentNullException(nameof(driver));
         }
+        protected void SafeClick(By locator, int maxAttempts = 3)
+        {
+            for (int i = 0; i < maxAttempts; i++)
+            {
+                try
+                {
+                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+                    var element = wait.Until(driver =>
+                    {
+                        try
+                        {
+                            var elem = driver.FindElement(locator);
+                            return elem.Displayed && elem.Enabled ? elem : null;
+                        }
+                        catch (StaleElementReferenceException)
+                        {
+                            return null;
+                        }
+                    });
+
+                    if (element != null)
+                    {
+                        element.Click();
+                        return;
+                    }
+
+                    Thread.Sleep(500);
+                }
+                catch (Exception ex)
+                {
+                    if (i == maxAttempts - 1)
+                        throw new Exception($"Failed to click element after {maxAttempts} attempts", ex);
+                    Thread.Sleep(1000);
+                }
+            }
+        }
     }
 }
