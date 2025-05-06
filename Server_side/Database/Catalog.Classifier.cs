@@ -14,7 +14,7 @@ public partial class Catalog
     {
         IDataModel dm = await _dbContext.LoadModelAsync(null, "[app].[Classifier.Index]", new { UserId = 1 });
         var md = new MetadataTester(dm);
-        md.IsAllKeys("TRoot,TClassifier,TProject,TParam,TKind");
+        md.IsAllKeys("TRoot,TClassifier,TProject,TParam,TKind,TClassifier_Type");
         md.IsItemType("TRoot", "Classifiers", FieldType.Array);
         md.IsItemType("TRoot", "Params", FieldType.Object);
         md.IsItemType("TRoot", "Kinds", FieldType.Map);
@@ -23,7 +23,7 @@ public partial class Catalog
 
         md.HasAllProperties(
            ObjectType,
-           "Id,Name,Project,Kind,Memo,ExternalCode"
+           "Id,Name,Project,Kind,Memo,ExternalCode,Classifier_Type"
            );
 
         md.IsId(ObjectType, "Id");
