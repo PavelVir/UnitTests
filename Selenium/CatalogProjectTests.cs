@@ -27,6 +27,7 @@ public class CatalogProjectTests
     [Test, Order(1)]
     public void CatalogProject01CreateNew()
     {
+        Wait();
         driver.Navigate().GoToUrl(Params.Url);
 
         var MainMenu = new MainMenu(driver);

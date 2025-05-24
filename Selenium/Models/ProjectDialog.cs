@@ -26,7 +26,7 @@ namespace USP_2022_UnitTests.Selenium.Models
 
         public void Button_append_click()
         {
-            driver.FindElement(Button_append).Click();
+            SafeClick(Button_append);
         }
         
         public void Button_edit_click()
