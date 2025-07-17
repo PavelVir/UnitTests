@@ -21,6 +21,11 @@ namespace USP_2022_UnitTests.Selenium.Models
 
             if (wait is null) throw new ArgumentNullException(nameof(driver));
         }
+
+        public void Wait()
+        {
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+        }
         protected void SafeClick(By locator, int maxAttempts = 3)
         {
             for (int i = 0; i < maxAttempts; i++)
