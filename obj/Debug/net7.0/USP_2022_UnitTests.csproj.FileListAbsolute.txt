@@ -1,8 +1,3 @@
-R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.csproj.AssemblyReference.cache
-R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.GeneratedMSBuildEditorConfig.editorconfig
-R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.AssemblyInfoInputs.cache
-R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.AssemblyInfo.cs
-R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.csproj.CoreCompileInputs.cache
 R:\USP_2022\UnitTests\bin\Debug\net7.0\testhost.dll
 R:\USP_2022\UnitTests\bin\Debug\net7.0\testhost.exe
 R:\USP_2022\UnitTests\bin\Debug\net7.0\selenium-manager\linux\selenium-manager
@@ -123,6 +118,15 @@ R:\USP_2022\UnitTests\bin\Debug\net7.0\A2v10.Lang.dll
 R:\USP_2022\UnitTests\bin\Debug\net7.0\A2v10.Javascript.dll
 R:\USP_2022\UnitTests\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
 R:\USP_2022\UnitTests\bin\Debug\net7.0\DocumentFormat.OpenXml.Framework.dll
+R:\USP_2022\UnitTests\bin\Debug\net7.0\Jint.dll
+R:\USP_2022\UnitTests\bin\Debug\net7.0\Acornima.dll
+R:\USP_2022\UnitTests\bin\Debug\net7.0\Jint.xml
+R:\USP_2022\UnitTests\bin\Debug\net7.0\Acornima.xml
+R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.csproj.AssemblyReference.cache
+R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.AssemblyInfoInputs.cache
+R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.AssemblyInfo.cs
+R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.csproj.CoreCompileInputs.cache
 R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.csproj.CopyComplete
 R:\USP_2022\UnitTests\obj\Debug\net7.0\USP_2022_UnitTests.dll
 R:\USP_2022\UnitTests\obj\Debug\net7.0\refint\USP_2022_UnitTests.dll
