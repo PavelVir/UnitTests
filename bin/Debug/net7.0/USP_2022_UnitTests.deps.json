@@ -17,11 +17,11 @@
           "Selenium.Support": "4.35.0",
           "System.Data.SqlClient": "4.9.0",
           "coverlet.collector": "6.0.2",
-          "A2v10.Data": "10.0.7335.0",
+          "A2v10.Data": "10.0.7336.0",
           "A2v10.Data.Interfaces": "10.0.7334.0",
-          "A2v10.Infrastructure": "10.0.7983.0",
-          "A2v10.Request": "10.0.7983.0",
-          "A2v10.Xaml": "10.0.8008.0"
+          "A2v10.Infrastructure": "10.0.7984.0",
+          "A2v10.Request": "10.0.7984.0",
+          "A2v10.Xaml": "10.0.8013.0"
         },
         "runtime": {
           "USP_2022_UnitTests.dll": {}
@@ -816,11 +816,11 @@
           }
         }
       },
-      "A2v10.Data/10.0.7335.0": {
+      "A2v10.Data/10.0.7336.0": {
         "runtime": {
           "A2v10.Data.dll": {
-            "assemblyVersion": "10.0.7335.0",
-            "fileVersion": "10.0.7335.0"
+            "assemblyVersion": "10.0.7336.0",
+            "fileVersion": "10.0.7336.0"
           }
         }
       },
@@ -832,51 +832,51 @@
           }
         }
       },
-      "A2v10.Infrastructure/10.0.7983.0": {
+      "A2v10.Infrastructure/10.0.7984.0": {
         "runtime": {
           "A2v10.Infrastructure.dll": {
-            "assemblyVersion": "10.0.7983.0",
-            "fileVersion": "10.0.7983.0"
+            "assemblyVersion": "10.0.7984.0",
+            "fileVersion": "10.0.7984.0"
           }
         }
       },
-      "A2v10.Request/10.0.7983.0": {
+      "A2v10.Request/10.0.7984.0": {
         "runtime": {
           "A2v10.Request.dll": {
-            "assemblyVersion": "10.0.7983.0",
-            "fileVersion": "10.0.7983.0"
+            "assemblyVersion": "10.0.7984.0",
+            "fileVersion": "10.0.7984.0"
           }
         }
       },
-      "A2v10.Xaml/10.0.8008.0": {
+      "A2v10.Xaml/10.0.8013.0": {
         "runtime": {
           "A2v10.Xaml.dll": {
-            "assemblyVersion": "10.0.8008.0",
-            "fileVersion": "10.0.8008.0"
+            "assemblyVersion": "10.0.8013.0",
+            "fileVersion": "10.0.8013.0"
           }
         }
       },
-      "A2v10.Interop/10.0.7983.0": {
+      "A2v10.Interop/10.0.7984.0": {
         "runtime": {
           "A2v10.Interop.dll": {
-            "assemblyVersion": "10.0.7983.0",
-            "fileVersion": "10.0.7983.0"
+            "assemblyVersion": "10.0.7984.0",
+            "fileVersion": "10.0.7984.0"
           }
         }
       },
-      "A2v10.Lang/10.0.7983.0": {
+      "A2v10.Lang/10.0.7984.0": {
         "runtime": {
           "A2v10.Lang.dll": {
-            "assemblyVersion": "10.0.7983.0",
-            "fileVersion": "10.0.7983.0"
+            "assemblyVersion": "10.0.7984.0",
+            "fileVersion": "10.0.7984.0"
           }
         }
       },
-      "A2v10.Javascript/10.0.7983.0": {
+      "A2v10.Javascript/10.0.7984.0": {
         "runtime": {
           "A2v10.Javascript.dll": {
-            "assemblyVersion": "10.0.7983.0",
-            "fileVersion": "10.0.7983.0"
+            "assemblyVersion": "10.0.7984.0",
+            "fileVersion": "10.0.7984.0"
           }
         }
       },
@@ -1165,7 +1165,7 @@
       "path": "system.text.json/8.0.5",
       "hashPath": "system.text.json.8.0.5.nupkg.sha512"
     },
-    "A2v10.Data/10.0.7335.0": {
+    "A2v10.Data/10.0.7336.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -1175,32 +1175,32 @@
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Infrastructure/10.0.7983.0": {
+    "A2v10.Infrastructure/10.0.7984.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Request/10.0.7983.0": {
+    "A2v10.Request/10.0.7984.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Xaml/10.0.8008.0": {
+    "A2v10.Xaml/10.0.8013.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Interop/10.0.7983.0": {
+    "A2v10.Interop/10.0.7984.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Lang/10.0.7983.0": {
+    "A2v10.Lang/10.0.7984.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "A2v10.Javascript/10.0.7983.0": {
+    "A2v10.Javascript/10.0.7984.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
